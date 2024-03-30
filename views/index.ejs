@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="tugas.css">
+        <title><%= title %></title>
+    </head>
+
+    <body>
+        <div id="main-container" style="display: none;">
+            <header>
+                <h1>Virtual Museum</h1>
+            </header>
+
+            <main id="gallery">
+                <div id="welcome-message">
+                    <h2>Selamat datang di Museum Virtual!</h2>
+                </div>
+                <div id="artifact-container"></div>
+                <!-- Konten museum akan ditambahkan di sini menggunakan JavaScript -->
+                <button onclick="showAboutUs()">About Us</button>
+            </main>
+        </div>
+        <div id="artifact-details" style="display: none;"></div>
+        <div id="about-us" style="display: none;">
+            <center><h2>About Us</h2></center>
+                <% mahasiswa.forEach(mhs => { %>
+                    <p>Name : <%= mhs.name%></p>
+                    <p>Email : <%= mhs.email%></p>
+                    <br>
+                <% }) %>
+                <button onclick="closeAboutUs()">Go Back</button>
+        </div>
+    
+
+        <form action="/logout?_method=DELETE" method="POST">
+            <button type="submit">Log Out</button>
+        </form>
+
+        <script src="tugas.js"></script>
+        
+    </body>
+    
+</html>

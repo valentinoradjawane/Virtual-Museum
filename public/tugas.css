@@ -1,0 +1,127 @@
+/* Add or modify styles as needed */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+#login-container{
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-image: 'download.jpeg';
+    /* Ganti 'download.jpeg' dengan nama file gambar latar belakang Anda */
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-weight: bold;
+    text-shadow: -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff, 0.5px 0.5px 0 #ffffff;
+}
+
+#login-container h1{
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#signup-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#main-container {
+    text-align: center;
+}
+
+#gallery {
+    margin: 50px;
+    background-image: url('download.jpeg');
+    /* Ganti 'download.jpeg' dengan nama file gambar latar belakang Anda */
+    background-size: cover;
+    background-position: center;
+    justify-content: space-around;
+    padding: 20px;
+    text-shadow: -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff, 0.5px 0.5px 0 #ffffff;
+}
+
+#artifact-container {
+    display: flex;
+    flex-wrap: wrap;
+    white-space: pre-wrap;
+}
+
+#artifact-details {
+    margin: 25px 50px;
+}
+
+#artifact-details h2 {
+    text-align: center;
+}
+
+#artifact-details img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.artifact {
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.artifact:hover {
+    transform: scale(1.05);
+}
+
+.artifact img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.artifact-info {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+}
+
+#about-us {
+    padding: 15px;
+    padding-left: 35px;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+}
